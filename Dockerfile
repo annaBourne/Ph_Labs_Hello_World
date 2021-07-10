@@ -1,4 +1,4 @@
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 WORKDIR /HelloWorldWeb
-COPY published/HelloWorldWeb.dll ./
+COPY published ./
 ENTRYPOINT ["dotnet", "HelloWorldWeb.dll"]
